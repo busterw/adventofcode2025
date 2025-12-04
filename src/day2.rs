@@ -16,7 +16,6 @@ pub fn solve() {
                     &value_str.as_str()[value_str.len() / 2..value_str.len()];
 
                 if first_half == second_half {
-                    println!("{}{}", first_half, second_half);
                     totals.push(value);
                 }
             }
