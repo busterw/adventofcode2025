@@ -1,4 +1,3 @@
-
 use crate::files;
 
 pub fn day1() {
@@ -21,9 +20,9 @@ pub fn day1() {
                         } else {
                             pass_zero_count += 1;
                         }
+                    }
                 }
             }
-        }
             'R' => {
                 for x in 0..instruction.amount {
                     current_pos += 1;
@@ -31,13 +30,13 @@ pub fn day1() {
                     let final_step = x == instruction.amount - 1;
                     if current_pos == 0 {
                         if final_step {
-                            zero_count += 1;        // lands on zero
+                            zero_count += 1; // lands on zero
                         } else {
-                            pass_zero_count += 1;   // passes through zero
+                            pass_zero_count += 1; // passes through zero
                         }
+                    }
                 }
             }
-        }
             _ => todo!(),
         }
     }
